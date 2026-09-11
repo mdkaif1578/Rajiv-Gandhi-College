@@ -1,1 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Rajiv Gandhi College | Nanded</title>
+  <meta name="description" content="Rajiv Gandhi College, Nanded - College information, courses, facilities and contact details.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #123b70;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .college-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #123b70;
+    }
+
+    .location {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #374151;
+      margin-left: 22px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #123b70;
+    }
+
+    .hero {
+      min-height: 500px;
+      padding: 90px 7%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #123b70, #2563a6);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #e5eef9;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #123b70;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: #123b70;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #6b7280;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #4b5563;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      color: #123b70;
+      margin-bottom: 8px;
+    }
+
+    .course-card p {
+      color: #6b7280;
+    }
+
+    .info {
+      background: white;
+    }
+
+    .info-box {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .info-card {
+      text-align: center;
+      padding: 25px;
+      border-radius: 12px;
+      background: #f5f7fb;
+    }
+
+    .info-card h3 {
+      color: #123b70;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 70px 7%;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .courses,
+      .info-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-area">
+      <div class="logo">RGC</div>
+
+      <div>
+        <div class="college-name">Rajiv Gandhi College</div>
+        <div class="location">Nanded, Maharashtra</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Rajiv Gandhi College</h1>
+
+      <p>
+        Welcome to Rajiv Gandhi College, Nanded.
+        Explore information about our college, courses,
+        education and facilities.
+      </p>
+
+      <a href="#about" class="btn">Explore College</a>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-title">
+      <h2>About the College</h2>
+      <p>Learn more about Rajiv Gandhi College</p>
+    </div>
+
+    <div class="about">
+      <p>
+        Rajiv Gandhi College is an educational institution located
+        in Nanded, Maharashtra. The college provides students with
+        opportunities to learn, develop technical skills and build
+        their academic and professional future.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Courses -->
+  <section id="courses" class="info">
+    <div class="section-title">
+      <h2>Courses</h2>
+      <p>Some example courses</p>
+    </div>
+
+    <div class="courses">
+
+      <div class="course-card">
+        <h3>B.Sc. Computer Science</h3>
+        <p>
+          Study programming, computer science, software and
+          modern technologies.
+        </p>
+      </div>
+
+      <div class="course-card">
+        <h3>BCA</h3>
+        <p>
+          Learn computer applications, programming,
+          databases and web technologies.
+        </p>
+      </div>
+
+      <div class="course-card">
+        <h3>Computer Applications</h3>
+        <p>
+          Develop practical knowledge of computers,
+          software and information technology.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- College Information -->
+  <section>
+    <div class="section-title">
+      <h2>College Information</h2>
+      <p>Quick information</p>
+    </div>
+
+    <div class="info-box">
+
+      <div class="info-card">
+        <h3>📍 Location</h3>
+        <p>Nanded, Maharashtra</p>
+      </div>
+
+      <div class="info-card">
+        <h3>🎓 Education</h3>
+        <p>Higher Education</p>
+      </div>
+
+      <div class="info-card">
+        <h3>💻 Technology</h3>
+        <p>Computer & IT Education</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="info">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>College contact information</p>
+    </div>
+
+    <div class="about">
+      <p>
+        Rajiv Gandhi College<br>
+        Nanded, Maharashtra, India
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <h3>Rajiv Gandhi College</h3>
+    <p>© 2026 Rajiv Gandhi College. Sample Website.</p>
+  </footer>
+
+</body>
+</html>
