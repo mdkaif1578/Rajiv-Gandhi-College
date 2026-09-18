@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdkaif1578.github.io/Rajiv-Gandhi-College/sitemap.xml
